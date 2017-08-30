@@ -18,12 +18,29 @@
        url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
        url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
 }
-  body{
+  body,pre{
     font-family: 'cwTeXYen';
   }
+
   p{
 	font-size:18px;
   }
+  
+   .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+   }
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+  
   </style>
 </head>
 <body oncut="return false" oncopy="return false" onselectstart="return false">
@@ -175,7 +192,9 @@
 Mojim.com
 魔鏡歌詞網
 )</p>
+<div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nO_K89S4O2M" frameborder="0" allowfullscreen></iframe>
+</div>
 <p>所以今天要勇敢地踏出這一步</p>
 
 <p>如果假日想去外地逛逛我開車載妳出去玩，希望妳可以跟我一起增加的公斤數 阿 是公里數</p>
