@@ -8,29 +8,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  @font-face {
-  font-family: 'cwTeXYen';
-  font-style: normal;
-  font-weight: 500;
-  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
-  src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
-       url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
-       url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
-       url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
-}
-  body,pre{
-    font-family: 'cwTeXYen';
-  }
+	@font-face {
+		font-family: 'cwTeXYen';
+		font-style: normal;
+		font-weight: 500;
+		src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+		src: url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+		   url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+		   url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+		   url(//fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
+	}
+	body,pre{
+		font-family: 'cwTeXYen';
+	}
 
-  p{
-	font-size:18px;
-  }
-  
-   .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-   }
+	p{
+		font-size:18px;
+	}
+
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px; height: 0; overflow: hidden;
+	}
 	.video-container iframe,
 	.video-container object,
 	.video-container embed {
@@ -40,7 +40,12 @@
 	  width: 100%;
 	  height: 100%;
 	}
-  
+	.scrollup {
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+		display: none;
+	}
   </style>
 </head>
 <body oncut="return false" oncopy="return false" onselectstart="return false">
@@ -53,6 +58,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
 	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
 
@@ -79,13 +85,21 @@
           <p>如果我們不曾相遇</p>
         </div>
       </div>
-	      <div class="item">
-        <img src="https://i.ytimg.com/vi/tqVq8ZbM0Gg/maxresdefault.jpg" alt="New York" style="width:100%;">
+	    <div class="item">
+        <img src="https://i.ytimg.com/vi/tqVq8ZbM0Gg/maxresdefault.jpg" alt="Eason" style="width:100%;">
         <div class="carousel-caption">
           <h3>Eason</h3>
           <p>世界</p>
         </div>
       </div>
+	  	    <div class="item">
+        <img src="http://video.nextmag.com.tw/photo/2015/10/28/20151028ENTSD-2_1446023972795_406739_ver1.0.jpg" alt="Karen" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Karen</h3>
+          <p>外面的世界</p>
+        </div>
+      </div>
+	  
     </div>
 
     <!-- Left and right controls -->
@@ -101,7 +115,9 @@
   <p class="text-center">喜歡聽的音樂</p>
   <div class="panel panel-default">
     <div class="panel-body">  
-	<p>周一是七夕情人節</p>
+	<p>周一是七夕情人節
+	<img src="http://uploads.sundxs.com/allimg/1708/43-1FP3144957.png" class="img-responsive" alt="SEVENSEE"> </p>
+	</p>
 <p>每年的七夕情人節，我都會不禁悲從中(愛演)來的想起一首詩，"眾里尋他千百度，驀然回首，月老依舊對我不屑一顧，願天下有情人皆有傷透心的一天"</p>
 
 <p>韶涵說過在最開始的那一秒，有些事早已經注定要到老，雖然命運愛開玩笑，真心會和真心遇到</p>
@@ -109,7 +125,7 @@
 <p>誰是韶涵?(裝熟魔人是我XD)怎麼好像聽過?曖昧對象?</p>
 <p>可惜不是QQ</p>
 
-<p>張韶涵，台灣人，歌曲隱形的翅膀被收進國、高中課本教材裡，有一年還成為北京高考的考題，膾炙人口的歌曲
+<p>張韶涵，台灣人，歌曲隱形的翅膀被收進國、高中課本教材裡，有一年還成為北京高考的考題喔，膾炙人口的歌曲
 有隱形的翅膀、口袋的天空、遺失的美好、親愛的那不是愛情等。
   <img src="http://i.imgur.com/q2ErStr.jpg" class="img-responsive" alt="Angela"> </p>
 <p>那她跟這篇有什麼關係呢？ 純粹自己很喜歡而已^^</p>
@@ -166,23 +182,21 @@
 我喜歡跟我在一起的人笑很開心 </p>
 <p>先分享一個自己覺得好笑的笑話 暖暖場XD</p>
 
-<pre><p>在某天美術課時
-我同學在捏黏土的時候  
-他發現他的材料不夠
-就看到隔壁桌上 
-有一個同學A已經做完有用剩的
-就指著那些用剩的問同學A
+<pre><p>馬雲最近因事心煩意亂, 
+便去求見一位德高望重的禪師.
 
-我同學：
-這些剩下來的黏土可以給我嗎?
+禪師沉默不言, 
+意味深長般的拿出一個熱水袋往裡面倒熱水, 
+倒滿之後, 輕輕一抖, 熱水袋突然就爆開了.
 
+馬雲若有所思的說: 
+禪師的意思是說這次的難關會像熱水袋一樣不攻自破? 
+還是說..我不應該自我膨脹?
 
+禪師搖搖頭說: 都不是. 我只是要讓你知道..
+這是我在淘寶買的....XDDDD</p></pre>
 
-
-
-同學A：那是我的作品...XDDDD</p></pre>
-
-<p>個性隨和 體貼，不抽煙，不喝酒</p>
+<p>個性隨和 脾氣很好 體貼，不抽煙，不喝酒</p>
 <p>自認做事與待人處事都很有條理(自誇組的?!)</p>
 <p>缺點有時候很懶(應該是一直很懶 不然不會拖到現在QQ)</p>
 <p>下班就回家耍廢 最近偶然領悟到自己已經是大齡男子了</p>
@@ -213,7 +227,7 @@ Mojim.com
 <p>日劇之前有看東京幻想女子、真命天菜
 <img src="https://pic.pimg.tw/ayakaze/1494404907-2618979215.png?v=1494404909" class="img-responsive" alt="godgirl"> 
 </p>
-<p>最近世大運結束後可能開始看韓劇急診室男女跟日劇CODE BLUE3
+<p>最近可能開始看韓劇急診室男女跟日劇CODE BLUE3
 <img src="http://kpopn.niusnews.com/kupload/imgs/default/2013/12/1220_song-choi-2.jpg" class="img-responsive" alt="codeblue"> 
 </p>
 <p>查一些美食小吃，下班就可以去吃</p>
@@ -224,9 +238,21 @@ Mojim.com
 <p>最近偶爾會自己煮菜，臨時抱佛腳看YOUTUBE，結果煮出來讓YOU吐 </p>
 <p>幾乎都是黑暗料理XD，希望妳能當我的生化實驗品!?</p>
 
+<p>希望可以找個伴可以到處去走走</p>
+<p>吃飽去公園散散步 聊聊今天發生的事(小確幸?)</p>
+<p>假日一起去咖啡店坐坐 去書店逛逛騎單車</p>
+
+<p>(配樂:我能想到最浪漫的事
+就是和你一起慢慢變老
+一路上收藏點點滴滴的歡笑
+留到以後 坐著搖椅 慢慢聊QQ
+)</p>
+<img src="https://i.ytimg.com/vi/jPi-hYa5D2g/hqdefault.jpg" class="img-responsive" alt="YOUNG"> 
 <p>妳不一定要喜歡這些 但是至少偶爾陪我的時候 希望不會覺得無聊</p>
 <p>至於妳喜歡的 我也會用心去感受的</p>
 <p>對於妳的付出我會很珍惜，因為沒有誰的付出是理所當然的</p>
+
+
 
 
 <p>還未交男友嗎?
@@ -241,7 +267,7 @@ Mojim.com
 <img src="https://i2.kknews.cc/large/11f8000830e982d0f809" class="img-responsive" alt="threefour"> </p>
 <p>那麼不如試著認識我喔!</p>
 <p>不限年齡跟地點喔</p>
-<p>(距離很近都不交流也跟住外地差不多吧= =)</p>
+<p>(距離很近都不交流也跟住外地差不多吧= =</p>
 <p>難道是鏡頭拉遠，容易失焦，鏡頭拉近，又太清楚!)</p>
 <p>如果妳有認真來信的 我一定會回信的</p>
 
@@ -254,13 +280,27 @@ Mojim.com
 		</div> 
 	</div>
 </div>
-
+<a href="#" class="scrollup"><button type="button" class="btn btn-default btn-circle btn-lg"><i class="glyphicon glyphicon-chevron-up"></i></button></a>
 </body>
 <script>
 jQuery(document).ready(function()
 {
-$(this).bind("contextmenu", function(e) {
-        e.preventDefault();
+	$(this).bind("contextmenu", function(e) {
+		e.preventDefault();
+	});
+	$(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
     });
 })
 </script>
