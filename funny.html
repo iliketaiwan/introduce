@@ -426,11 +426,11 @@
         }
       }
 
-      function set(srcobj, x, y) {
-        //srcobj.style.color='#FF0000';
+      function set(obj, x, y) {
+	    //obj.style.color='#FF0000';
         block[x][y] = 1;
         count = 0;
-        //計算水平和垂直連線
+        //計算水平和垂直
         for (i = 1; i <= 5; i++) {
           sum1 = 0;
           sum2 = 0;
@@ -445,7 +445,7 @@
             count++;
           }
         }
-        //計算斜角
+        //計算斜線
         sum1 = 0;
         sum2 = 0;
         for (i = 1; i <= 5; i++) {
