@@ -462,9 +462,14 @@
 		  $(".modeltext").html("哇!完全符合，在一起~~~(誤)");
 		  $(".modelimg").attr("src","./image/love.jpg");
           $('#myModal').modal('show');
-        } else if(count >= 3) {
+        } else if(count >= 6) {
           //alert("配對成功>_<")
-		  $(".modeltext").html("Congratulations!!配對成功一起出去玩吧!!^^");
+		  $(".modeltext").html("超過一半符合!!一起出去玩吧!!^^");
+		  $(".modelimg").attr("src","./image/outside.jpg");
+          $('#myModal').modal('show');
+        }else if(count >= 3) {
+          //alert("配對成功>_<")
+		  $(".modeltext").html("Congratulations!!配對來聊聊天吧!!^^");
           $('#myModal').modal('show');
         }
       }
