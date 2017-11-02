@@ -386,10 +386,10 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Congratulations!!配對成功一起出去玩吧!!^^</h4>
+                <h4 class="modal-title modeltext">Congratulations!!配對成功一起出去玩吧!!^^</h4>
               </div>
               <div class="modal-body">
-                <p> <img class="img-responsive" src="./image/couple.jpg"> </p>
+                <p> <img class="img-responsive modelimg" src="./image/couple.jpg"> </p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
@@ -457,8 +457,14 @@
         if (sum2 == 5) {
           count++;
         }
-        if (count >= 3) {
+		
+		if (count == 12) {
+		  $(".modeltext").html("哇!完全符合，在一起~~~(誤)");
+		  $(".modelimg").attr("src","./image/love.jpg");
+          $('#myModal').modal('show');
+        } else if(count >= 3) {
           //alert("配對成功>_<")
+		  $(".modeltext").html("Congratulations!!配對成功一起出去玩吧!!^^");
           $('#myModal').modal('show');
         }
       }
