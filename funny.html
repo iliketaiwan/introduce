@@ -2,7 +2,7 @@
 <html lang="zh-Hant-TW">
 
   <head>
-    <title>match</title>
+    <title>Match Test</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,7 +25,6 @@
         transition: 0.6s;
         transform-style: preserve-3d;
         position: relative;
-        cursor: pointer;
       }
       
       .front,
@@ -41,11 +40,13 @@
         transform: rotateY(0deg);
         /*background:red;*/
         color: white;
+		cursor:pointer;
       }
       
       .back {
         transform: rotateY(180deg);
         background-size: 100% auto;
+		cursor: not-allowed;
       }
 
 	  
@@ -68,8 +69,8 @@
             <tr bgcolor="#CD3450">
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,1,1)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,1,1)">
                       煮菜難吃也可以接受XD
                     </div>
                     <div class="back" style="background-image:url('image/apple.png');">
@@ -80,8 +81,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,2,1)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,2,1)">
                       喜歡吃
                     </div>
                     <div class="back" style="background-image:url('image/bacon.png');">
@@ -92,8 +93,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,3,1)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,3,1)">
                       喜歡聽冷笑話
                     </div>
                     <div class="back" style="background-image:url('image/broccoli.png');">
@@ -104,8 +105,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,4,1)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,4,1)">
                       喜歡運動
                     </div>
                     <div class="back" style="background-image:url('image/cheese.png');">
@@ -116,8 +117,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,5,1)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,5,1)">
                       喜歡睡覺
                     </div>
                     <div class="back" style="background-image:url('image/cherry.png');">
@@ -130,8 +131,8 @@
             <tr bgcolor="#FAA72A">
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,1,2)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,1,2)">
                       不排斥工程獅(吼)
                     </div>
                     <div class="back" style="background-image:url('image/chicken-leg.png');">
@@ -142,8 +143,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,2,2)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,2,2)">
                       BMI正常
                     </div>
                     <div class="back" style="background-image:url('image/chocolate.png');">
@@ -154,8 +155,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,3,2)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,3,2)">
                       不喜歡大男人主義
                     </div>
                     <div class="back" style="background-image:url('image/cookie.png');">
@@ -166,8 +167,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,4,2)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,4,2)">
                       不排斥公教家庭
                     </div>
                     <div class="back" style="background-image:url('image/cupcake.png');">
@@ -178,8 +179,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,5,2)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,5,2)">
                       願意互相分享喜怒哀樂
                     </div>
                     <div class="back" style="background-image:url('image/donut.png');">
@@ -192,8 +193,8 @@
             <tr bgcolor="#666699">
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,1,3)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,1,3)">
                       不會抽菸偶爾小酌
                     </div>
                     <div class="back" style="background-image:url('image/cupcake.png');">
@@ -204,8 +205,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,2,3)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,2,3)">
                       出生年小於1985
                     </div>
                     <div class="back" style="background-image:url('image/eggplant.png');">
@@ -216,8 +217,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,3,3)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,3,3)">
                       妳是女生
                     </div>
                     <div class="back" style="background-image:url('image/french-fries.png');">
@@ -228,8 +229,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,4,3)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,4,3)">
                       住在台灣
                     </div>
                     <div class="back" style="background-image:url('image/fried-egg.png');">
@@ -240,8 +241,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,5,3)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,5,3)">
                       妳單身!
                     </div>
                     <div class="back" style="background-image:url('image/hamburger.png');">
@@ -254,8 +255,8 @@
             <tr bgcolor="#05BDB0">
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,1,4)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,1,4)">
                       喜歡耐心體貼的人
                     </div>
                     <div class="back" style="background-image:url('image/ice-cream.png');">
@@ -266,8 +267,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,2,4)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,2,4)">
                       喜歡出去玩耍
                     </div>
                     <div class="back" style="background-image:url('image/meatball.png');">
@@ -278,8 +279,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,3,4)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,3,4)">
                       接受1988年出生的男生
                     </div>
                     <div class="back" style="background-image:url('image/milk.png');">
@@ -290,8 +291,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,4,4)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,4,4)">
                       ptt登入次數100次以上
                     </div>
                     <div class="back" style="background-image:url('image/orange.png');">
@@ -302,8 +303,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,5,4)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,5,4)">
                       愛笑/個性文靜活潑都可以!
                     </div>
                     <div class="back" style="background-image:url('image/pea.png');">
@@ -316,8 +317,8 @@
             <tr bgcolor="#2062AF">
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,1,5)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,1,5)">
                       對感情專一
                     </div>
                     <div class="back" style="background-image:url('image/pineapple.png');">
@@ -328,8 +329,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,2,5)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,2,5)">
                       真誠不說謊
                     </div>
                     <div class="back" style="background-image:url('image/pizza.png');">
@@ -340,8 +341,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,3,5)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,3,5)">
                       喜歡看電影/電視
                     </div>
                     <div class="back" style="background-image:url('image/pudding.png');">
@@ -352,8 +353,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,4,5)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,4,5)">
                       偶爾在家耍廢偶爾出去玩
                     </div>
                     <div class="back" style="background-image:url('image/soda.png');">
@@ -364,8 +365,8 @@
               </td>
               <td align="center">
                 <div class="flip-container">
-                  <div class="flipper" onclick="set(this,5,5)">
-                    <div class="front">
+                  <div class="flipper" >
+                    <div class="front" onclick="set(this,5,5)">
                       接受身高170的男生
                     </div>
                     <div class="back" style="background-image:url('image/taco.png');">
