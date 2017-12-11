@@ -197,7 +197,7 @@
                 <div class="flip-container">
                   <div class="flipper" >
                     <div class="front" onclick="set(this,1,3)">
-                      不會抽菸偶爾小酌
+                      不會抽菸
                     </div>
                     <div class="back" style="background-image:url('image/cupcake.png');">
 
@@ -259,7 +259,7 @@
                 <div class="flip-container">
                   <div class="flipper" >
                     <div class="front" onclick="set(this,1,4)">
-                      喜歡耐心體貼的人
+                      喜歡耐心體貼的人(我XD)
                     </div>
                     <div class="back" style="background-image:url('image/ice-cream.png');">
 
@@ -295,7 +295,7 @@
                 <div class="flip-container">
                   <div class="flipper" >
                     <div class="front" onclick="set(this,4,4)">
-                      ptt登入次數100次以上
+                      ptt登入次數500次以上
                     </div>
                     <div class="back" style="background-image:url('image/orange.png');">
 
@@ -460,8 +460,12 @@
         if (sum2 == 5) {
           count++;
         }
-		
-		if (count == 12) {
+		if(count >= 3) {
+		  $(".modeltext").html("哇!在一起~~~(誤)");
+		  $(".modelimg").attr("src","./image/love.jpg");
+          $('#myModal').modal('show');
+		}
+		/*if (count == 12) {
 		  $(".modeltext").html("哇!完全符合，在一起~~~(誤)");
 		  $(".modelimg").attr("src","./image/love.jpg");
           $('#myModal').modal('show');
@@ -474,7 +478,7 @@
           //alert("配對成功>_<")
 		  $(".modeltext").html("Congratulations!!配對成功來聊天吃飯吧!!^^");
           $('#myModal').modal('show');
-        }
+        }*/
       }
 
     </script>
