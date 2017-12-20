@@ -440,6 +440,7 @@
 				if (checked == null) {
 					alert("請至少選擇一項");
 				}else{
+				    $("html, body").animate({ scrollTop: 0 }, "slow");
 					if($('input[name=optradio]:checked', '#myForm'+i).val()== 1){
 						total = total+8;
 					}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 2){
