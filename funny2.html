@@ -25,6 +25,15 @@
 		color: #FFFFFF;
 		cursor: pointer;
 	  }
+	  .progress {
+		height: 25px;
+	  }
+	  .progress-bar-danger {
+		background-color: #800080;
+	  }
+	.progress-bar {
+		line-height: 25px;
+	}
     </style>
   </head>
 
@@ -53,7 +62,7 @@
       <label><input type="radio" name="optradio" value="3">都不是(這是..XD)</label><img class="img-responsive" src="http://i2.wp.com/inews.gtimg.com/newsapp_match/0/1079665214/0"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" onclick="next(1)">下一題 <span class="badge">2</span></button>
+	<button type="button" class="btn btn-info btn-block" onclick="next(1)">下一題 <span class="badge">2</span></button>
   </form>
   </div>
   
@@ -73,7 +82,7 @@
       <label><input type="radio" name="optradio" value="4">陽明山公園</label> <img class="img-responsive" src="http://mmweb.tw/sys/ieb/pic/m12515_0b.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn2b" onclick="next(2)">下一題 <span class="badge">3</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn2b" onclick="next(2)">下一題 <span class="badge">3</span></button>
   </form>
   </div>
   
@@ -87,7 +96,7 @@
       <label><input type="radio" name="optradio" value="2">文靜</label><img class="img-responsive" src="http://imgs.nmplus.hk/wp-content/uploads/2016/03/Song-Hye-kyo-2.jpg"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn3b" onclick="next(3)">下一題 <span class="badge">4</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn3b" onclick="next(3)">下一題 <span class="badge">4</span></button>
   </form>
   </div>
   
@@ -110,24 +119,24 @@
       <label><input type="radio" name="optradio" value="5">190</label><img class="img-responsive" src="https://bouncin.net/upload/FEATURE/Interview_08_Sam/02_new.jpg" width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn4b" onclick="next(4)">下一題 <span class="badge">5</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn4b" onclick="next(4)">下一題 <span class="badge">5</span></button>
   </form>
   </div>
   
     <div id='test5' class="well">
-	<p>5.假日或放假日偏好:</p>
+	<p>5.假日或放假日偏好:</p><img class="img-responsive" src="https://fsp.youthwant.com/images/580_504529006365325.jpg"  width="460" height="345"> 
 	<form id="myForm5">
     <div class="radio">
       <label><input type="radio" name="optradio" value="1">偶爾在家耍廢偶爾出去玩</label>
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio" value="2">一定要出去玩</label>
+      <label><input type="radio" name="optradio" value="2">要出去玩</label>
     </div>
 	 <div class="radio">
-      <label><input type="radio" name="optradio" value="2">一定要待在家耍廢</label> 
+      <label><input type="radio" name="optradio" value="2">要待在家耍廢</label> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(5)">下一題 <span class="badge">6</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(5)">下一題 <span class="badge">6</span></button>
   </form>
   </div>
   
@@ -147,7 +156,7 @@
       <label><input type="radio" name="optradio" value="4">東部</label><img class="img-responsive" src="https://pic.pimg.tw/hsw2756/1407500737-1796384742.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(6)">下一題 <span class="badge">7</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(6)">下一題 <span class="badge">7</span></button>
   </form>
   </div>
   
@@ -155,10 +164,10 @@
 	<p>7.妳偏好的顏色:</p>
 	<form id="myForm7">
     <div class="radio">
-      <label><input type="radio" name="optradio" value="1">紅</label><img class="img-responsive" src="https://pic.pimg.tw/myzs1029/1438523616-237718355.jpg?v=1438523624"  width="460" height="345"> 
+      <label><input type="radio" name="optradio" value="1">紅</label><img class="img-responsive" src="https://puui.qpic.cn/qqvideo_ori/0/t05108ys57q_496_280/0"  width="460" height="345"> 
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio" value="2">紫</label><img class="img-responsive" src="https://pic.pimg.tw/lthlove0118/1473999292-1838505623_n.png?v=1473999311"  width="460" height="345"> 
+      <label><input type="radio" name="optradio" value="2">紫</label><img class="img-responsive" src="http://cdn.clickme.net/Gallery/2014/12/03/073240fb134e5fc60b0f2c6561f5afa6.jpg"  width="460" height="345"> 
     </div>
 	<div class="radio">
       <label><input type="radio" name="optradio" value="3">藍</label><img class="img-responsive" src="http://images.plurk.com/0e6735e6ac1b6c5838f6144c35cdccae.jpg"  width="460" height="345"> 
@@ -170,7 +179,7 @@
       <label><input type="radio" name="optradio" value="3">其他</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(7)">下一題 <span class="badge">8</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(7)">下一題 <span class="badge">8</span></button>
   </form>
   </div>
   
@@ -187,7 +196,7 @@
       <label><input type="radio" name="optradio" value="2">不可以</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(8)">下一題 <span class="badge">9</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(8)">下一題 <span class="badge">9</span></button>
   </form>
   </div>
       <div id='test9' class="well">
@@ -203,7 +212,7 @@
       <label><input type="radio" name="optradio" value="3">不管原因一律原諒</label><img class="img-responsive" src="https://pic.pimg.tw/lin08085/1410175338-1657027353.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(9)">下一題 <span class="badge">10</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(9)">下一題 <span class="badge">10</span></button>
   </form>
   </div>
       <div id='test10' class="well">
@@ -222,7 +231,7 @@
       <label><input type="radio" name="optradio" value="4">花生</label><img class="img-responsive" src="http://orsimages.unileversolutions.com/ORS_Images/Knorr_zh-HK/img1(69)_48_1.1.203_326X580.Jpeg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(10)">下一題 <span class="badge">11</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(10)">下一題 <span class="badge">11</span></button>
   </form>
   </div>
       <div id='test11' class="well">
@@ -235,7 +244,7 @@
       <label><input type="radio" name="optradio" value="2">否，配合別人(在別人的生活跑龍套!!)</label><img class="img-responsive" src="http://img3.cache.netease.com/photo/0003/2010-05-27/67N5GPG233UP0003.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(11)">下一題 <span class="badge">12</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(11)">下一題 <span class="badge">12</span></button>
   </form>
   </div>
       <div id='test12' class="well">
@@ -248,7 +257,7 @@
       <label><input type="radio" name="optradio" value="2">否，當個無聲的人(無魂有體親像稻草人)</label><img class="img-responsive" src="https://i.ytimg.com/vi/Ux6P1et8UUA/hqdefault.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(12)">下一題 <span class="badge">13</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(12)">下一題 <span class="badge">13</span></button>
   </form>
   </div>
       <div id='test13' class="well">
@@ -260,7 +269,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">否，我的隱私就是我的隱私 你的隱私還是我的隱私</label><img class="img-responsive" src="http://www.twword.com/uploads/wiki/e7/92/660923_3.jpg"  width="460" height="345"> 
     </div>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(13)">下一題 <span class="badge">14</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(13)">下一題 <span class="badge">14</span></button>
   </form>
   </div>
       <div id='test14' class="well">
@@ -276,7 +285,7 @@
       <label><input type="radio" name="optradio" value="3">會抽菸</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(14)">下一題 <span class="badge">15</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(14)">下一題 <span class="badge">15</span></button>
   </form>
   </div>
       <div id='test15' class="well">
@@ -292,7 +301,7 @@
       <label><input type="radio" name="optradio" value="3">非單身</label><img class="img-responsive" src="https://popxo-uploads.s3.amazonaws.com/2016/03/FB-MyStory-The-Moment-I-Knew-I-Was-In-Love.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(15)">下一題 <span class="badge">16</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(15)">下一題 <span class="badge">16</span></button>
   </form>
   </div>
   
@@ -307,7 +316,7 @@
       <label><input type="radio" name="optradio" value="2">不接受，直接斷絕一切關係</label><img class="img-responsive" src="http://www.angelhome.org/upload/image/meitibaodao/Img264047916.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(16)">下一題 <span class="badge">17</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(16)">下一題 <span class="badge">17</span></button>
   </form>
   </div>
   
@@ -327,7 +336,7 @@
       <label><input type="radio" name="optradio" value="4">根本就是故意取笑妳</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(17)">下一題 <span class="badge">18</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(17)">下一題 <span class="badge">18</span></button>
   </form>
   </div>
   
@@ -341,7 +350,7 @@
       <label><input type="radio" name="optradio" value="2">饒舌</label><img class="img-responsive" src="https://cdn2.ettoday.net/images/2723/d2723503.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(18)">下一題 <span class="badge">19</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(18)">下一題 <span class="badge">19</span></button>
   </form>
   </div>
         <div id='test19' class="well">
@@ -357,7 +366,7 @@
       <label><input type="radio" name="optradio" value="3">心情沮喪，提不起勁</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(19)">下一題 <span class="badge">20</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(19)">下一題 <span class="badge">20</span></button>
   </form>
   </div>
   
@@ -371,7 +380,7 @@
       <label><input type="radio" name="optradio" value="2">不喜歡</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(20)">下一題 <span class="badge">21</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(20)">下一題 <span class="badge">21</span></button>
   </form>
   </div>
   
@@ -388,7 +397,7 @@
       <label><input type="radio" name="optradio" value="3">不聰明</label><img class="img-responsive" src="http://pic.pimg.tw/emelytsai/1382254636-72958647.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(21)">下一題 <span class="badge">22</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(21)">下一題 <span class="badge">22</span></button>
   </form>
   </div>
   
@@ -403,7 +412,7 @@
       <label><input type="radio" name="optradio" value="2">沒有QQ</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(22)">下一題 <span class="badge">23</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(22)">下一題 <span class="badge">23</span></button>
   </form>
   </div>
   
@@ -417,7 +426,7 @@
       <label><input type="radio" name="optradio" value="2">不喜歡</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(23)">下一題 <span class="badge">24</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(23)">下一題 <span class="badge">24</span></button>
   </form>
   </div>
   
@@ -440,7 +449,7 @@
       <label><input type="radio" name="optradio" value="5">沒看過哈利波特...</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(24)">下一題 <span class="badge">25</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(24)">下一題 <span class="badge">25</span></button>
   </form>
   </div>
   
@@ -460,7 +469,7 @@
       <label><input type="radio" name="optradio" value="5">其他..</label>
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next(25)">下一題 <span class="badge">26</span></button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next(25)">下一題 <span class="badge">26</span></button>
   </form>
   </div>
   
@@ -478,7 +487,7 @@
       <label><input type="radio" name="optradio" value="3">都不是是醫科!</label><img class="img-responsive" src="http://kenshin.hk/blog/jdnews/201310/20131101-1.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-primary" id="btn5b" onclick="next2(26)">完成</button>
+	<button type="button" class="btn btn-info btn-block" id="btn5b" onclick="next2(26)">完成</button>
   </form>
   </div>
   
@@ -499,7 +508,7 @@
 				<p> <img class="img-responsive modelimg" src=""> </p>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-info btn-block" data-dismiss="modal">關閉</button>
               </div>
             </div>
 
@@ -515,6 +524,7 @@
 	 });
 		 var total=0; 
 		 var progress=0;
+		 var submited=0;
 		 function next(i) {
 				var checked =$('input[name=optradio]:checked', '#myForm'+i).val();
 				if (checked == null) {
@@ -548,7 +558,6 @@
 		function next2(i) {
 				
 				var checked =$('input[name=optradio]:checked', '#myForm'+i).val();
-				var submited=0;
 				if (checked == null) {
 					alert("請選擇一項");
 				}else{
