@@ -13,6 +13,18 @@
 	      font-family: arial , "微軟正黑體";
 		  font-size:18px;
 	  }
+	  
+	  
+	  .radio {
+		display: inline-block;
+		width: 45%;
+		padding: 7px;
+		background-color: rgba(0, 0, 0, 0.7);
+		border: 1px solid #555555;
+		border-radius: 4px;
+		color: #FFFFFF;
+		cursor: pointer;
+	  }
     </style>
   </head>
 
@@ -36,10 +48,10 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">男生</label><img class="img-responsive" src="http://t6tt.com/wp-content/uploads/2016/05/6836111.jpg"  width="460" height="345"> 
     </div>
-	 <div class="radio">
+	<div class="radio">
       <label><input type="radio" name="optradio" value="3">都不是(這是..XD)</label><img class="img-responsive" src="http://i2.wp.com/inews.gtimg.com/newsapp_match/0/1079665214/0"  width="460" height="345"> 
     </div>
-
+	</br>
 	<button type="button" class="btn btn-info" onclick="next(1)">下一題 <span class="badge">2</span></button>
   </form>
   </div>
@@ -59,6 +71,7 @@
 	<div class="radio">
       <label><input type="radio" name="optradio" value="4">陽明山公園</label> <img class="img-responsive" src="http://mmweb.tw/sys/ieb/pic/m12515_0b.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn2b" onclick="next(2)">下一題 <span class="badge">3</span></button>
   </form>
   </div>
@@ -67,11 +80,12 @@
    <p>3.妳的個性偏向?:</p>
 	<form id="myForm3">
     <div class="radio">
-      <label><input type="radio" name="optradio" value="1">活潑</label><img class="img-responsive" src="https://cdn2.ettoday.net/images/1725/d1725259.jpg"  width="360" height="445"> 
+      <label><input type="radio" name="optradio" value="1">活潑</label><img class="img-responsive" src="https://cdn2.ettoday.net/images/1725/d1725259.jpg"> 
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio" value="2">文靜</label><img class="img-responsive" src="http://imgs.nmplus.hk/wp-content/uploads/2016/03/Song-Hye-kyo-2.jpg"  width="360" height="445"> 
+      <label><input type="radio" name="optradio" value="2">文靜</label><img class="img-responsive" src="http://imgs.nmplus.hk/wp-content/uploads/2016/03/Song-Hye-kyo-2.jpg"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn3b" onclick="next(3)">下一題 <span class="badge">4</span></button>
   </form>
   </div>
@@ -92,8 +106,9 @@
       <label><input type="radio" name="optradio" value="4">150</label><img class="img-responsive" src="http://www.twgreatdaily.com/imgs/image/144/14493901.jpg"  width="460" height="345"> 
     </div>
 	<div class="radio">
-      <label><input type="radio" name="optradio" value="5">190</label><img class="img-responsive" src="https://img-fnc.ebc.net.tw/EbcFnc/news/images/16456/2017/12/12/1513073929_65726.jpg" width="460" height="345"> 
+      <label><input type="radio" name="optradio" value="5">190</label><img class="img-responsive" src="https://bouncin.net/upload/FEATURE/Interview_08_Sam/02_new.jpg" width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn4b" onclick="next(4)">下一題 <span class="badge">5</span></button>
   </form>
   </div>
@@ -110,6 +125,7 @@
 	 <div class="radio">
       <label><input type="radio" name="optradio" value="2">一定要待在家耍廢</label> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(5)">下一題 <span class="badge">6</span></button>
   </form>
   </div>
@@ -129,6 +145,7 @@
 	<div class="radio">
       <label><input type="radio" name="optradio" value="4">東部</label><img class="img-responsive" src="https://pic.pimg.tw/hsw2756/1407500737-1796384742.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(6)">下一題 <span class="badge">7</span></button>
   </form>
   </div>
@@ -151,6 +168,7 @@
 	<div class="radio">
       <label><input type="radio" name="optradio" value="3">其他</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(7)">下一題 <span class="badge">8</span></button>
   </form>
   </div>
@@ -167,6 +185,7 @@
 	<div class="radio">
       <label><input type="radio" name="optradio" value="2">不可以</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(8)">下一題 <span class="badge">9</span></button>
   </form>
   </div>
@@ -182,6 +201,7 @@
 	  <div class="radio">
       <label><input type="radio" name="optradio" value="3">不管原因一律原諒</label><img class="img-responsive" src="https://pic.pimg.tw/lin08085/1410175338-1657027353.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(9)">下一題 <span class="badge">10</span></button>
   </form>
   </div>
@@ -200,6 +220,7 @@
 	  <div class="radio">
       <label><input type="radio" name="optradio" value="4">花生</label><img class="img-responsive" src="http://orsimages.unileversolutions.com/ORS_Images/Knorr_zh-HK/img1(69)_48_1.1.203_326X580.Jpeg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(10)">下一題 <span class="badge">11</span></button>
   </form>
   </div>
@@ -212,6 +233,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">否，配合別人(在別人的生活跑龍套!!)</label><img class="img-responsive" src="http://img3.cache.netease.com/photo/0003/2010-05-27/67N5GPG233UP0003.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(11)">下一題 <span class="badge">12</span></button>
   </form>
   </div>
@@ -224,6 +246,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">否，當個無聲的人(無魂有體親像稻草人)</label><img class="img-responsive" src="https://i.ytimg.com/vi/Ux6P1et8UUA/hqdefault.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(12)">下一題 <span class="badge">13</span></button>
   </form>
   </div>
@@ -251,6 +274,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="3">會抽菸</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(14)">下一題 <span class="badge">15</span></button>
   </form>
   </div>
@@ -266,6 +290,7 @@
 	<div class="radio">
       <label><input type="radio" name="optradio" value="3">非單身</label><img class="img-responsive" src="https://popxo-uploads.s3.amazonaws.com/2016/03/FB-MyStory-The-Moment-I-Knew-I-Was-In-Love.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(15)">下一題 <span class="badge">16</span></button>
   </form>
   </div>
@@ -280,6 +305,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">不接受，直接斷絕一切關係</label><img class="img-responsive" src="http://www.angelhome.org/upload/image/meitibaodao/Img264047916.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(16)">下一題 <span class="badge">17</span></button>
   </form>
   </div>
@@ -299,6 +325,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="4">根本就是故意取笑妳</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(17)">下一題 <span class="badge">18</span></button>
   </form>
   </div>
@@ -312,6 +339,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">饒舌</label><img class="img-responsive" src="https://cdn2.ettoday.net/images/2723/d2723503.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(18)">下一題 <span class="badge">19</span></button>
   </form>
   </div>
@@ -327,6 +355,7 @@
 	<div class="radio">
       <label><input type="radio" name="optradio" value="3">心情沮喪，提不起勁</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(19)">下一題 <span class="badge">20</span></button>
   </form>
   </div>
@@ -340,6 +369,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">不喜歡</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(20)">下一題 <span class="badge">21</span></button>
   </form>
   </div>
@@ -356,6 +386,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="3">不聰明</label><img class="img-responsive" src="http://pic.pimg.tw/emelytsai/1382254636-72958647.jpg"  width="460" height="345"> 
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(21)">下一題 <span class="badge">22</span></button>
   </form>
   </div>
@@ -370,7 +401,7 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">沒有QQ</label>
     </div>
-	
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(22)">下一題 <span class="badge">23</span></button>
   </form>
   </div>
@@ -384,21 +415,49 @@
     <div class="radio">
       <label><input type="radio" name="optradio" value="2">不喜歡</label>
     </div>
+	</br>
 	<button type="button" class="btn btn-info" id="btn5b" onclick="next(23)">下一題 <span class="badge">24</span></button>
   </form>
   </div>
   
-  
-    <div id='test24' class="well">
-	<p>24.偏好文科還是理工科男生?:</p><img class="img-responsive" src="http://mmbiz.qpic.cn/mmbiz/B4A2jRqC7yWVaVMIiaib0x2m8yONdm6FvZWo5GiavoXdKL3r1P1iaB8SMHSddnYV29qpP8sw9CW34icuQubI5TfDMIA/0"> 
+     <div id='test24' class="well">
+	<p>24.妳想被分到哪個學院?:</p>
 	<form id="myForm24">
     <div class="radio">
-      <label><input type="radio" name="optradio" value="1">理工科</label>
+      <label><input type="radio" name="optradio" value="1">葛萊芬多</label><img class="img-responsive" src="https://www.shemazing.net/wp-content/uploads/2016/06/hermione2-667x370.png"  width="460" height="345"> 
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio" value="2">文科</label>
+      <label><input type="radio" name="optradio" value="2">雷文克勞</label><img class="img-responsive" src="http://tw.ptt01.cc/zhtw/c021/Image/20150813/6357503477784023284694715.jpg"  width="460" height="345"> 
     </div>
-	<button type="button" class="btn btn-info" id="btn5b" onclick="next2(24)">完成</button>
+	    <div class="radio">
+      <label><input type="radio" name="optradio" value="3">史萊哲林</label><img class="img-responsive" src="https://i2.wp.com/hygo.com/wp-content/uploads/2017/07/maxresdefault.jpg?resize=728%2C410"  width="460" height="345"> 
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio" value="4">赫夫帕夫</label><img class="img-responsive" src="http://images.900.tw/upload_file/38/content/b4b16731-5837-4199-64bc-775c6f7d8ced.jpg"  width="460" height="345"> 
+    </div>
+	    <div class="radio">
+      <label><input type="radio" name="optradio" value="5">沒看過哈利波特...</label>
+    </div>
+	</br>
+	<button type="button" class="btn btn-info" id="btn5b" onclick="next(24)">下一題 <span class="badge">25</span></button>
+  </form>
+  </div>
+  
+  
+    <div id='test25' class="well">
+	<p>25.偏好文科還是理工科男生?:</p>
+	<form id="myForm25">
+    <div class="radio">
+      <label><input type="radio" name="optradio" value="1">理工科</label><img class="img-responsive" src="http://img3.cache.netease.com/daxue/2013/12/18/201312181002379bfad.jpg"  width="460" height="345"> 
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio" value="2">文科</label><img class="img-responsive" src="http://pic.pimg.tw/john547/1352808997-1734484724.jpg"  width="460" height="345"> 
+    </div>
+	 <div class="radio">
+      <label><input type="radio" name="optradio" value="3">都不是是醫科!</label><img class="img-responsive" src="http://kenshin.hk/blog/jdnews/201310/20131101-1.jpg"  width="460" height="345"> 
+    </div>
+	</br>
+	<button type="button" class="btn btn-info" id="btn5b" onclick="next2(25)">完成</button>
   </form>
   </div>
   
@@ -453,7 +512,7 @@
 					$("#test"+i).hide();
 					//alert((total/(8*i))*100+"%");
 					i=i+1;
-					progress=Math.round(i/24*100);
+					progress=Math.round(i/25*100);
 					$("#test"+i).show();
 					$(".progress-bar").attr("aria-valuenow",progress);
 					$(".progress-bar").attr("style","width:"+progress+"%");
