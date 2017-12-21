@@ -406,7 +406,7 @@
   </form>
   </div>
   
-      <div id='test23' class="well">
+    <div id='test23' class="well">
 	<p>23.喜歡看電影或電視嗎?:</p>
 	<form id="myForm23">
     <div class="radio">
@@ -443,10 +443,30 @@
   </form>
   </div>
   
-  
-    <div id='test25' class="well">
-	<p>25.偏好文科還是理工科男生?:</p>
+   <div id='test25' class="well">
+	<p>25.妳的年齡?:</p>
 	<form id="myForm25">
+    <div class="radio">
+      <label><input type="radio" name="optradio" value="1">30-40</label><img class="img-responsive" src="https://www.beauty321.com/articleIMG/month_1610/201610141152518434.jpg"  width="460" height="345"> 
+    </div>
+	    <div class="radio">
+      <label><input type="radio" name="optradio" value="2">20-30</label><img class="img-responsive" src="http://i1.wp.com/inews.gtimg.com/newsapp_bt/0/1685918533/641"  width="460" height="345"> 
+    </div>
+	  <div class="radio">
+      <label><input type="radio" name="optradio" value="4">40-50</label><img class="img-responsive" src="http://topnews8.com/file//n1434/t.jpg"  width="460" height="345"> 
+    </div>
+	 <div class="radio">
+      <label><input type="radio" name="optradio" value="5">其他..</label>
+    </div>
+	</br>
+	<button type="button" class="btn btn-info" id="btn5b" onclick="next(25)">下一題 <span class="badge">26</span></button>
+  </form>
+  </div>
+  
+  
+    <div id='test26' class="well">
+	<p>26.偏好文科還是理工科男生?:</p>
+	<form id="myForm26">
     <div class="radio">
       <label><input type="radio" name="optradio" value="1">理工科</label><img class="img-responsive" src="http://img3.cache.netease.com/daxue/2013/12/18/201312181002379bfad.jpg"  width="460" height="345"> 
     </div>
@@ -457,7 +477,7 @@
       <label><input type="radio" name="optradio" value="3">都不是是醫科!</label><img class="img-responsive" src="http://kenshin.hk/blog/jdnews/201310/20131101-1.jpg"  width="460" height="345"> 
     </div>
 	</br>
-	<button type="button" class="btn btn-info" id="btn5b" onclick="next2(25)">完成</button>
+	<button type="button" class="btn btn-info" id="btn5b" onclick="next2(26)">完成</button>
   </form>
   </div>
   
@@ -512,7 +532,7 @@
 					$("#test"+i).hide();
 					//alert((total/(8*i))*100+"%");
 					i=i+1;
-					progress=Math.round(i/25*100);
+					progress=Math.round(i/26*100);
 					$("#test"+i).show();
 					$(".progress-bar").attr("aria-valuenow",progress);
 					$(".progress-bar").attr("style","width:"+progress+"%");
@@ -527,18 +547,21 @@
 		function next2(i) {
 				
 				var checked =$('input[name=optradio]:checked', '#myForm'+i).val();
+				var submited=0;
 				if (checked == null) {
 					alert("請選擇一項");
 				}else{
-				
-					if($('input[name=optradio]:checked', '#myForm'+i).val()== 1){
-						total = total+8;
-					}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 2){
-						total = total+4;
-					}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 3){
-						total = total+2;
-					}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 4){
-						total = total+1;
+					if(submited==0){
+						submited = 1;
+						if($('input[name=optradio]:checked', '#myForm'+i).val()== 1){
+							total = total+8;
+						}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 2){
+							total = total+4;
+						}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 3){
+							total = total+2;
+						}else if($('input[name=optradio]:checked', '#myForm'+i).val()== 4){
+							total = total+1;
+						}
 					}
 					//$("#test"+i).hide();
 					//alert((total/(4*i))*100+"%");
