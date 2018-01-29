@@ -759,7 +759,7 @@
 <div id="loading">
   <button class="btn btn-primary" id="play">請先點我播放音樂喔!!!!</button>
 </div>
-<audio class="song" loop>
+<audio class="song" controls loop>
         <source src="collection.mp3"></source>
 	   Your browser isn't invited for super fun audio time.
     </audio>
@@ -2511,7 +2511,7 @@ $(document).ready(function(){
 		var audio = $('.song')[0];
         audio.play();
 		$('#loading').fadeOut('fast');
-		alert("音樂稍大，請稍等喔XD，確定有音樂再開始看，比較感動XD");
+		alert("音樂稍大，請稍等喔XD，確定有音樂在開始看，比較感動XD");
 	});
   
   
