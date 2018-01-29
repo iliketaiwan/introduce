@@ -729,10 +729,37 @@
     background-color: #e6ccff;
     border-color:#e6ccff;
 	}
+	
+   #loading {
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: fixed;
+   display: block;
+   background-color: black;
+   z-index: 99;
+   text-align: center;
+}
+
+#play {
+  position: absolute;
+  z-index: 100;
+  left: 0; 
+  right: 0; 
+  top:50%;
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 200px; /* Need a specific value to work */
+}
+	
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-<audio class="song" autoplay loop>
+<div id="loading">
+  <button class="btn btn-primary" id="play">請先播放音樂喔!!!!</button>
+</div>
+<audio class="song" loop>
         <source src="collection.mp3"></source>
 	   Your browser isn't invited for super fun audio time.
     </audio>
@@ -759,7 +786,7 @@
 
 <div class="jumbotron text-center">
   <h1>Our Story For you</h1> 
-  <p>Purple & Karen</p> 
+  <p>筱瑩 & 凱倫</p> 
    <p>2017/11/18 - Forever</p> 
 </div>
 <!-- Container (TOUR Section) -->
@@ -2479,6 +2506,14 @@
 <script>
 $(document).ready(function(){
   // Initialize Tooltip
+  
+  	$('#play').click(function(){
+		var audio = $('.song')[0];
+        audio.play();
+		$('#loading').fadeOut('fast');
+	});
+  
+  
   $('[data-toggle="tooltip"]').tooltip(); 
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
